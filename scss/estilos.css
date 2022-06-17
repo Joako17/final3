@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Serif&family=Kdam+Thmor+Pro&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=IBM+Plex+Serif&family=Kdam+Thmor+Pro&family=Oswald&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=IBM+Plex+Serif&family=Kdam+Thmor+Pro&family=Oswald&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  background-color: yellow;
+}
+header .fondo {
+  background-color: rgb(204, 0, 0);
+}
+header h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Oswald";
+}
+header p {
+  text-align: left;
+  font-size: 30px;
+  font-family: "Shadows Into Light";
+}
+
+/* fin */
+/*section */
+section {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+section .card {
+  margin: 5px;
+  border: none;
+}
+section .card p {
+  text-align: center;
+  font-family: "Bebas Neue";
+  color: red;
+  font-size: 20px;
+}
+
+/* fin */
+/* profesionales */
+#profesionales .tit {
+  text-align: center;
+  font-family: "Oswald";
+}
+#profesionales .img1 {
+  width: 150px;
+  height: 150px;
+}
+#profesionales .img2 {
+  width: 150px;
+  height: 150px;
+}
+#profesionales .img3 {
+  width: 150px;
+  height: 150px;
+}
+#profesionales .img4 {
+  width: 150px;
+  height: 150px;
+}
+#profesionales .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 200px);
+  grid-template-areas: "any any mari mari" "any any mari mari" "marina marina claudia claudia" "marina marina claudia claudia";
+}
+#profesionales .grid-container h1 {
+  text-align: center;
+}
+#profesionales .grid-container h2 {
+  font-family: "Shadows Into Light";
+}
+#profesionales .grid-container p {
+  text-align: center;
+}
+#profesionales .any {
+  grid-area: any;
+}
+#profesionales .mari {
+  grid-area: mari;
+}
+#profesionales .marina {
+  grid-area: marina;
+}
+#profesionales .claudia {
+  grid-area: claudia;
+}
+
+/* fin */
+/* footer */
+footer section {
+  background-color: orange;
+}
+
+/* footer fin */
+@media screen and (max-width: 320px) {
+  #profesionales {
+    width: auto;
+    height: 100%;
+  }
+  #profesionales .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: "any any any any" "mari mari mari mari" "claudia claudia claudia claudia" "marina marina marina marina";
+  }
+  #profesionales .grid-container h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  #profesionales .grid-container h2 {
+    font-family: "Shadows Into Light";
+    font-size: 18px;
+  }
+  #profesionales .grid-container p {
+    text-align: center;
+  }
+  #profesionales .any {
+    grid-area: any;
+  }
+  #profesionales .mari {
+    grid-area: mari;
+  }
+  #profesionales .marina {
+    grid-area: marina;
+  }
+  #profesionales .claudia {
+    grid-area: claudia;
+  }
+
+  footer {
+    margin-top: auto;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
